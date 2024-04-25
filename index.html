@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" class="display-input" readonly>
+      </div>
+      <div class="buttons">
+        <button class="btn" value="+" onclick="digit(this.value)">+</button>
+        <button class="btn" value="-" onclick="digit(this.value)">-</button>
+        <button class="btn" value="x" onclick="digit(this.value)">X</button>
+        <button class="btn" value="/" onclick="digit(this.value)">/</button>
+
+        <button class="btn" value="7" onclick="digit(this.value)">7</button>
+        <button class="btn" value="8" onclick="digit(this.value)">8</button>
+        <button class="btn" value="9" onclick="digit(this.value)">9</button>
+
+        <button class="btn equal" value="=" onclick="equals()">=</button>
+
+        <button class="btn" value="4" onclick="digit(this.value)">4</button>
+        <button class="btn" value="5" onclick="digit(this.value)">5</button>
+        <button class="btn" value="6" onclick="digit(this.value)">6</button>
+
+        <button class="btn" value="1" onclick="digit(this.value)">1</button>
+        <button class="btn" value="2" onclick="digit(this.value)">2</button>
+        <button class="btn" value="3" onclick="digit(this.value)">3</button>
+
+        <button class="btn" value="0" onclick="digit(this.value)">0</button>
+        <button class="btn" value="." onclick="addFloat()">.</button>
+        <button class="btn" value="C" title="clear" onclick="clearAll()">C</button>
+      </div>
+    </div>
+    <footer>
+      Henrique Luis Baesa - RM558977<br>
+      Pablo Da Cruz - RM555903
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
